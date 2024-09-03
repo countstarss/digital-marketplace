@@ -19,5 +19,10 @@ const editor = useEditor({
 - [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
 - 添加这些属性 prose prose-slate prose-sm sm:prose-base ，编辑器就能正常使用了
 
-3. 
+## Prisma
+
+1. 下载之后，首先需要初始化Prisma
+   `npx prisma init`
+
+2. 
 

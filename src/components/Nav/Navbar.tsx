@@ -12,7 +12,7 @@ import { UserNav } from "./UserNav";
 export async function Navbar() {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
-  const fullname = `${user.given_name} ${user.family_name}`
+  // const fullname = `${user.given_name} ${user.family_name}`
   return (
     <nav className="relative max-w-7xl w-full flex md:grid md:grid-cols-12 items-center px-4 md:px-8 mx-auto py-7">
       <div className="md:col-span-3">
@@ -29,7 +29,7 @@ export async function Navbar() {
         {user ? (
           <UserNav
             email={user.email as string}
-            name={fullname as string}
+            name={user.family_name as string}
             userImage={
               user.picture ?? `https://avatar.vercel.sh/${user.given_name}`
             }
