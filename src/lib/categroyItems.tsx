@@ -18,13 +18,13 @@ export const categoryItems: iAppProps[] = [
   {
     id: 1,
     name: "uikit",
-    title: "Ui Kit",
+    title: "UI KIT",
     image: <ChefHat />,
   },
   {
     id: 2,
     name: "icon",
-    title: "Icon",
+    title: "ICON",
     image: <PartyPopper />,
   },
 ];

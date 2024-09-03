@@ -1,9 +1,9 @@
 "use server";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { ZodStringDef, z } from "zod";
-import prisma from "./lib/db";
+import prisma from "../lib/db";
 import { type CategoryTypes } from "@prisma/client";
-import { stripe } from "./lib/stripe";
+import { stripe } from "../lib/stripe";
 import { redirect } from "next/navigation";
 
 export type State = {

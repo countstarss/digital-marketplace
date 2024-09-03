@@ -69,3 +69,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* 
+MARK: 改变Tiptap编辑器输入框的Outline
+*/
+/* .ProseMirror:focus {
+  outline: 2px solid #3498db00; 
+} */

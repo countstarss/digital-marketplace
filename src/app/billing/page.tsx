@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import prisma from "../lib/db";
+import prisma from "../../lib/db";
 import { Button } from "@/components/ui/button";
 import { CreateStripeAccoutnLink, GetStripeDashboardLink } from "../actions";
 import { Submitbutton } from "../components/SubmitButtons";
