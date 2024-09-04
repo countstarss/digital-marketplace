@@ -13,7 +13,7 @@ import { JSONContent } from '@tiptap/react'
 import { useFormState } from 'react-dom'
 import { SellProduct, State } from '../../actions'
 import { toast, Toaster } from 'sonner'
-import { Submitbutton } from '@/src/components/SubmitButtons'
+import { Submitbutton } from '@/src/components/Buttons'
 
 type Props = {}
 

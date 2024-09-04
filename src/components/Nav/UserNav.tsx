@@ -46,7 +46,7 @@ export function UserNav({ email, name, userImage }: Props) {
 
         <DropdownMenuGroup>
           <DropdownMenuItem asChild>
-            <Link href="/sell">Sell your Product</Link>
+            <Link href="/sell">Add Product</Link>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
             <Link href="my-products">My Products</Link>

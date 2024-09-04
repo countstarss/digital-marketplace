@@ -40,5 +40,18 @@ const editor = useEditor({
    但不是所有的内容都通过Input等标签存储，有一个办法是：在组件中添加一个hidden类型的Input标签，设置name为目标值，使用value保存值
    `<input type="hidden" name='category' value={selectedCategory || ""}/>` SelectedCategory.tsx
 
-2. 
+## 如何使用Zod
+
+1. 首先，要进行验证的数据要有name属性，这样才能获取到
+2. 第一步，创建Zod Schema，定义数据的验证规则
+3. 第二步，创建validateFields,获取到有效数据
+   ``` ts
+   const validateFields = userSettingsSchema.safeParse({
+    firstName: formData.get("firstName"),
+    lastName: formData.get("lastName"),
+   });
+   ```
+4. 第三步，判断 ！validateFields.success,如果不是全部符合条件，就返回Error State
+
+## 
 
