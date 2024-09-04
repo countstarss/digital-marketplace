@@ -4,7 +4,7 @@
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
-// MARK: - Setup
+// MARK: Setup
 generator client {
   provider = "prisma-client-js"
 }
@@ -15,7 +15,7 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-// MARK: - User
+// MARK: User
 model User {
   id           String @id @unique
   email        String
@@ -23,10 +23,10 @@ model User {
   lastName     String
   profileImage String
 
-  Product  Product[]
+  Product Product[]
 }
 
-// MARK: - Product
+// MARK: Product
 model Product {
   id           String        @id @default(uuid())
   name         String
@@ -38,12 +38,14 @@ model Product {
   category     CategoryTypes
 
   createAt DateTime @default(now())
-  User User? @relation(fields: [userId],references: [id])
-  userId String?
+  User     User?    @relation(fields: [userId], references: [id])
+  userId   String?
 }
 
+// MARK: CategoryTypes
 enum CategoryTypes {
   template
   uikit
   icon
 }
+

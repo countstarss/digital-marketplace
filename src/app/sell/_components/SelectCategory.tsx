@@ -12,6 +12,7 @@ const SelectCategory = (props: Props) => {
 
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+      <input type="hidden" name='category' value={selectedCategory || ""}/>
       {categoryItems.map((item) => (
         <div className='cursor-pointer' key={item.id}>
           <Card className={
