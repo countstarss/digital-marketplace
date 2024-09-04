@@ -4,7 +4,7 @@ import NewestProducts from "../components/NewestProducts";
 
 export default function Home() {
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-8 mb-24">
+    <section className="max-w-7xl mx-auto px-4 md:px-8 my-24">
       <div className="max-w-3xl mx-auto text-2xl sm:text-5xl lg:text-6xl font-semibold text-center">
         <h1>Find the best Tailwind</h1>
         <h1 className="text-primary mt-5">Templates & Icons</h1>
