@@ -53,5 +53,22 @@ const editor = useEditor({
    ```
 4. 第三步，判断 ！validateFields.success,如果不是全部符合条件，就返回Error State
 
-## 
+## 配置next.config.mjs使用外部图片
+
+``` ts
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        hostname: "utfs.io",
+        protocol: "https",
+        port: "",
+      },
+    ],
+  },
+};
+export default nextConfig;
+```
+
 
