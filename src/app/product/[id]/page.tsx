@@ -78,7 +78,7 @@ export default async function ProductPage({
       */}
       <div className="max-w-2xl mx-auto mt-5 
                       lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-3">
-        <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">  
+        <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">  
           {data?.name}
         </h1>
 

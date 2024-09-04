@@ -19,7 +19,6 @@ interface data  {
   name:string,
   price:Number,
   smallSummary:string,
-  description:JsonValue,
   images:string[],
 }
 

@@ -14,6 +14,7 @@ import { useFormState } from 'react-dom'
 import { SellProduct, State } from '../../actions'
 import { toast, Toaster } from 'sonner'
 import { Submitbutton } from '@/src/components/Buttons'
+import { redirect } from 'next/navigation'
 
 type Props = {}
 
@@ -31,6 +32,7 @@ const SellForm = (props: Props) => {
   useEffect(() => {
     if(state.status === 'success') {
       toast.success("Produc has been created")
+      redirect("/")
     } else if (state.status === 'error') {
       toast.error(state.message)
     } 

@@ -15,13 +15,13 @@ const ProductDescription = ({content}: {content:JSONContent | null}) => {
     content:content,
     editorProps:{
       attributes :{
-        class :"focus:outline-none prose prose-slate prose-sm sm:prose-base"
+        class :"focus:outline-none prose prose-sm sm:prose-base dark:text-white"
       }
     },
     immediatelyRender: false,
   })
   return (
-    <EditorContent editor={editor}/>
+    <EditorContent editor={editor} className='dark:text-white'/>
 
   )
 }
