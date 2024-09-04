@@ -26,6 +26,10 @@ interface data  {
 const ProductCard = (data : data ) => {
   return (
     <div className='rounded-lg'>
+      
+      {/* 
+      // MARK: Carousel
+      */}
       <Carousel className="w-full">
         <CarouselContent>
           {data.images.map((_, index) => (
@@ -41,6 +45,9 @@ const ProductCard = (data : data ) => {
 
         
       </Carousel>
+      {/* 
+      // MARK: INFO
+      */}
       <div className='flex justify-between items-center mt-2 mx-1'>
         <h1 className='text-xl font-semibold'><a href={`product/${data.id}`}>{data.name}</a></h1>
         <h3 className='font-bold text-lg inline-flex items-center px-2 py-1 bg-primary/10 rounded-md ring-1 ring-inset ring-primary/20'>${`${data.price}`}</h3>
@@ -50,10 +57,6 @@ const ProductCard = (data : data ) => {
       <Button asChild className='w-full mt-3 bg-primary/90'>
           <Link href={`product/${data.id}`}>Learn More</Link>
       </Button>
-      {/* 
-      // MARK: INFO
-      */}
-      
     </div>
       
   )
